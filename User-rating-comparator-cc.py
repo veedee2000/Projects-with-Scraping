@@ -31,3 +31,5 @@ ar = sorted(arr.items(), key = lambda x : x[1], reverse = True)
 for i in ar:
     p = " "*(max - len(i[0]))
     print('username : ',i[0],p,'|  rating : ',i[1])
+    
+    
