@@ -2,12 +2,6 @@
 
 import requests
 from bs4 import BeautifulSoup
-import ssl
-
-#Ignoring certificate errors
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
 
 arr = {}  #array to originally store the elements
 ar = {}   #Buffer array required for output
@@ -31,5 +25,4 @@ ar = sorted(arr.items(), key = lambda x : x[1], reverse = True)
 for i in ar:
     p = " "*(max - len(i[0]))
     print('username : ',i[0],p,'|  rating : ',i[1])
-    
-    
+
