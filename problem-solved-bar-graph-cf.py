@@ -18,21 +18,23 @@ def bar_plot():
 username = input("Enter the username : ")
 url = "https://codeforces.com/submissions/"
 urlo = "https://codeforces.com"
-url += username
-html = requests.get(url)
-soup = BeautifulSoup(html.text,'html.parser')
-tags = soup('a')
-tags_href = []
-for tag in tags:
-    tags_href.append(tag.get('href'))
+need_href = set()  #The set to keep the links of the problems attempted by the user.
 
-need_href = set()
+for go in range(15):  #Tweak the value to suit your own needs (P.S. setting it bigger will take a litte more time)
+    goprime = "/page/" + str(go + 1)
+    html = requests.get(url + username + goprime)
+    soup = BeautifulSoup(html.text,'html.parser')
+    tags = soup('a')
+    tags_href = []   #This list contains alll the links from anchor tags in a given page
+    
+    for tag in tags:
+        tags_href.append(tag.get('href'))
 
-for i in tags_href:
-    if i == None: continue
-    if len(re.findall("/contest/[a-zA-Z0-9]+/problem/[a-zA-Z0-9]+",i)) == 1:
-        need_href.add(urlo + i)
-        # print(1)
+    for i in tags_href:
+        if i == None: continue
+        if len(re.findall("/contest/[a-zA-Z0-9]+/problem/[a-zA-Z0-9]+",i)) == 1:
+            need_href.add(urlo + i)
+
 
 ratings = {}
 r = []
@@ -47,13 +49,11 @@ for links in need_href:
         r.append(i1.get_text().strip())
     for i in r:
         if len(re.findall(".*[0-9]+",i)) == 1:
-            print(i[1:len(i)])
+            print("Rating = ",i[1:len(i)])
             if int(i[1:len(i)]) not in ratings:
                 ratings[int(i[1:len(i)])] = 1
             else:
                 ratings[int(i[1:len(i)])] += 1
-        # print(ratings)
-    # quit()
 
  ##Converting the ratings dictionary into lists
 rated = []
