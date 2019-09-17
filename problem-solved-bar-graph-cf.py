@@ -10,7 +10,7 @@ def bar_plot():
     index = np.arange(len(rated))
     plt.bar(index, solved)
     plt.xlabel('Rating', fontsize=12)
-    plt.ylabel('Number solved', fontsize=12)
+    plt.ylabel('Numbers attempted', fontsize=12)
     plt.xticks(index, rated, fontsize=5, rotation=30)
     plt.title('Solved vs Rating Plot')
     plt.show()
