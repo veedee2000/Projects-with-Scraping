@@ -1,6 +1,6 @@
 # Projects-with-Scraping
 
-# This repository features web-scaping using various libraries and tools available with python3
+## This repository features web-scaping using various libraries and tools available with python3
 
 ## Technologies used in making this repository:
 
