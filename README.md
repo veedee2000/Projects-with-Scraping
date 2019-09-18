@@ -25,4 +25,4 @@
 
 * **Ouput Bar-graph on Python GUI** 
 
-
+<img width="708" alt="scraper2" src="https://user-images.githubusercontent.com/43088920/65152979-99897880-da46-11e9-9877-ef2caf02166d.png">
