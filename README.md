@@ -19,10 +19,10 @@
 
 2. **Problem-solved-bar-graph-cf.py**   : Takes a username on the online coding platform [Codeforces](https://www.codeforces.com) as input and provides a **bar graph** of Rating vs Number of problems attempted. Now as a fun activity you can try and plot the graph vs problems **Accepted**, **TLE** etc. by tweaking and adding in chips of data.  
 
-* **Parser Extracting Information** from the website
+  * **Parser Extracting Information** from the website
 
-<img width="486" alt="parser1" src="https://user-images.githubusercontent.com/43088920/65152341-672b4b80-da45-11e9-973f-c93c966f791e.png">
+<img width="486" alt="parser1" src="https://user-images.githubusercontent.com/43088920/65152341-672b4b80-da45-11e9-973f-    c93c966f791e.png">
 
-* **Ouput Bar-graph on Python GUI** 
+  * **Ouput Bar-graph on Python GUI** 
 
 <img width="708" alt="scraper2" src="https://user-images.githubusercontent.com/43088920/65152979-99897880-da46-11e9-9877-ef2caf02166d.png">
