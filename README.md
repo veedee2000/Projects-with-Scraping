@@ -16,6 +16,10 @@
 
 1. **User-rating-comparator-cc.py**  : Compares the **current rating** among a given number of users on the online coding platform [Codechef](https://www.codechef.com/node)
 
+* **Complete excution**
+
+<img width="633" alt="parser3" src="https://user-images.githubusercontent.com/43088920/65153888-284ac500-da48-11e9-9eaf-ac51ecf186ca.png">
+
 
 2. **Problem-solved-bar-graph-cf.py**   : Takes a username on the online coding platform [Codeforces](https://www.codeforces.com) as input and provides a **bar graph** of Rating vs Number of problems attempted. Now as a fun activity you can try and plot the graph vs problems **Accepted**, **TLE** etc. by tweaking and adding in chips of data.  
 
