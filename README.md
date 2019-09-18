@@ -21,7 +21,7 @@
 
   * **Parser Extracting Information** from the website
 
-<img width="486" alt="parser1" src="https://user-images.githubusercontent.com/43088920/65152341-672b4b80-da45-11e9-973f-    c93c966f791e.png">
+
 
   * **Ouput Bar-graph on Python GUI** 
 
