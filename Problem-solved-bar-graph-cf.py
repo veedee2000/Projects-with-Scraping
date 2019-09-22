@@ -1,3 +1,4 @@
+#BY VARUN (for the love of Scraping)
 import requests
 import numpy as np
 import matplotlib.pyplot as plt
@@ -48,7 +49,7 @@ for links in need_href:
     for i1 in parse:
         r.append(i1.get_text().strip())
     for i in r:
-        if len(re.findall(".*[0-9]+",i)) == 1:
+        if len(re.findall("\*[0-9]+",i)) == 1:
             print("Rating = ",i[1:len(i)])
             if int(i[1:len(i)]) not in ratings:
                 ratings[int(i[1:len(i)])] = 1
